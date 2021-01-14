@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Creations- Delivering Jewellery</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="C:\Users\Hp user\Desktop\New Creations\node_modules\jquery\dist\jquery.min.js"></script>
+<script src="C:\Users\Hp user\Desktop\New Creations\node_modules\jquery-validation\dist\jquery.validate.min.js"></script>
+<script src="login.js"></script>
+<script src="captcha.js"></script>
+</head>
+<style>
+  .centerdv{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<body style="background-image: url(https://us.123rf.com/450wm/dezignmart/dezignmart1801/dezignmart180100022/94263589-islamic-ornament-golden-black-background-vector-illustration.jpg?ver=6);" onload="GenerateCaptcha();">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" width="60" height="30" alt="" loading="lazy">
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" style="border-radius: 33px; width: 200px;" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" style="border-radius: 33px;"  type="submit">Search</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="singup.html">Signup</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="about.html">About Us</a>
+                <a class="dropdown-item" href="contact.html">Contact Us</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Our Policies</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Necklace
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Gold Necklace</a>
+                <a class="dropdown-item" href="#">Diamond Necklace</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other Necklaces</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rings
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Gold Rings</a>
+                <a class="dropdown-item" href="#">Diamond Rings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other Rings</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bangles
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Gold Bangles</a>
+                <a class="dropdown-item" href="#">Diamond Bangles</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other Bangles</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="container centerdv" style="background-color: white;">
+        <form action="" name="login">
+            <br>
+            <br>
+            <div class="form-group col-md-6 centerdv">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group col-md-6 centerdv">
+                <label for="inputPassword5">Password</label>
+                <input type="password" name="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter your password">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+            </div>
+            <div>    
+              Enter the Captcha Text:  
+              <input type="text" id="txtCompare" />  
+              <input type="text" id="txtCaptcha" style="text-align: center; border: none; font-weight: bold; font-size: 20px; font-family: Modern" />  
+              <input type="button" id="btnrefresh" value="Refresh" onclick="GenerateCaptcha();" />    
+              <br />  
+              <br />  
+          </div>  
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Keep me Signed in</label>
+            </div>
+            
+            <a href="index.html"><button type="submit" onsubmit="validate()" onclick="alert(ValidCaptcha());" class="btn btn-outline-success" style="border-radius: 33px;">Submit</button></a>
+            <br>
+            <br>
+            <p>Don't have an account?<span><a href="singup.html">Sign Up</a></span></p>
+            <br>
+            <p>Login using OTP?<span><a href="otplogin.html">OTP Login</a></span></p>
+            <br>
+            <br>
+          </form>
+      </div>
+</body>
+<br>
+<br>
+<footer>
+  <div class="container centerdv" style="background-color: black;">
+  &copy;
+  Copyright of <span><a href="about.html">New Creations Pvt. Ltd.</a></span>
+  </div>
+</footer>
+</html>
