@@ -11,6 +11,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/signup.js"></script>
 </head>
 <style>
   .centerdv{
@@ -22,7 +23,7 @@
 <body style="background-image: url(https://us.123rf.com/450wm/dezignmart/dezignmart1801/dezignmart180100022/94263589-islamic-ornament-golden-black-background-vector-illustration.jpg?ver=6);">
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
-          <img src="logo.png" width="60" height="30" alt="" loading="lazy">
+          <img src="images/logo.png" width="60" height="30" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -94,54 +95,54 @@
       <br>
       <br>
       <div class="container centerdv" style="background-color: white;">
-        <form>
+        <form name="signup" action="">
             <br>
             <br>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">First Name</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your First Name">
+                <input type="text" name="firstname" class="form-control" id="inputFirstName" placeholder="Enter your First Name">
               </div>
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">Last Name</label>
-                  <input type="text" class="form-control" id="inputLastName" placeholder="Enter your Last Name">
+                  <input type="text" name="lastname" class="form-control" id="inputLastName" placeholder="Enter your Last Name">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your Email">
+                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Enter your Email">
                 </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
+                <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
               </div>
             </div>
             <div class="form-group">
                 <label for="inputAddress">Phone</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Enter your Phone Number">
+                <input type="text" name="phonenumber" class="form-control" id="inputAddress" placeholder="Enter your Phone Number">
               </div>
             <div class="form-group">
               <label for="inputAddress">Address 1</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Enter Locality">
+              <input type="text" name="address1" class="form-control" id="inputAddress" placeholder="Enter Locality">
             </div>
             <div class="form-group">
               <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Enter Street and Town">
+              <input type="text" name="address2" class="form-control" id="inputAddress2" placeholder="Enter Street and Town">
             </div>
             <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" class="form-control" id="inputCity" name="city">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" name="state">
                   <option selected>Choose...</option>
                   <option>West Bengal</option>
                 </select>
               </div>
               <div class="form-group col-md-3">
                 <label for="inputState">District</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" name="district">
                   <option selected>Choose...</option>
                   <option>Hoogly</option>
                   <option>Howrah</option>
@@ -152,7 +153,7 @@
               </div>
               <div class="form-group col-md-2">
                 <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" name="zip">
               </div>
             </div>
             <div class="form-group">
@@ -163,7 +164,7 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-outline-success" style="border-radius: 33px;">Sign Up</button>
+            <button type="submit" onsubmit="validate()" class="btn btn-outline-success" style="border-radius: 33px;">Sign Up</button>
           </form>
           <br>
           <br>
